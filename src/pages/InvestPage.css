@@ -1,0 +1,62 @@
+.invest-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    background-color: #0c002b; /* Fond bleu foncé */
+    color: white; /* Couleur du texte en blanc */
+    text-align: center;
+    padding: 2rem;
+    overflow-y: auto; /* Permettre le défilement vertical */
+  }
+  
+  .invest-page h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    margin-top: 6.5rem;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .invest-page h1 {
+      font-size: 2.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .invest-page h1 {
+      font-size: 2rem;
+    }
+  }
+  /* Styles pour l'image de la fonctionnalité */
+.feature-image {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.feature-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Effet de survol et style actif pour les fonctionnalités */
+.market-section .features span {
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #fff;
+  transition: background-color 0.3s ease;
+  cursor: pointer; /* Curseur pointer pour indiquer que c'est cliquable */
+}
+
+.market-section .features span:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.market-section .features span.active {
+  background-color: rgba(255, 255, 255, 0.3); /* Style pour l'élément actif */
+}

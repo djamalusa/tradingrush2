@@ -1,0 +1,87 @@
+.investment-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(1, 33, 65, 0.9); /* Fond bleu foncé transparent */
+    padding: 2rem;
+    border-radius: 5px; /* Coins arrondis */
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5); /* Ombre pour un effet de profondeur */
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .investment-form label {
+    margin-top: 1rem;
+    color: white; /* Couleur du texte en blanc */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .investment-form select,
+  .investment-form input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    background-color: #34495e; /* Couleur de fond des champs */
+    color: white; /* Couleur du texte des champs */
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .investment-form button {
+    margin-top: 2rem;
+    padding: 0.5rem 1rem;
+    color: #f1f2f3;
+    background-color: #27ae60; /* Couleur de fond du bouton */
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .investment-form button:hover {
+    background-color: #219150; /* Couleur de fond du bouton au survol */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .investment-form {
+      padding: 1.5rem;
+    }
+  
+    .investment-form label {
+      font-size: 0.9rem;
+    }
+  
+    .investment-form select,
+    .investment-form input {
+      font-size: 0.9rem;
+    }
+  
+    .investment-form button {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .investment-form {
+      padding: 1rem;
+    }
+  
+    .investment-form label {
+      font-size: 0.8rem;
+    }
+  
+    .investment-form select,
+    .investment-form input {
+      font-size: 0.8rem;
+    }
+  
+    .investment-form button {
+      font-size: 0.8rem;
+    }
+  }

@@ -1,0 +1,17 @@
+footer {
+  background-color: #0c002b; /* Définit le fond du footer */
+  color: #f1f2f3; /* Couleur du texte */
+  text-align: center; /* Centre le texte horizontalement */
+  padding: 20px 0; /* Ajoute du padding en haut et en bas */
+  position:fixed; /* Fixe le footer au bas de la page */
+  left: 0;
+  bottom: 0;
+  width: 100%; /* Assure que le footer prend toute la largeur de la page */
+  box-shadow: 0 -2px 4px rgba(1, 2, 27, 0.1); /* Ajoute une ombre subtile en haut */
+}
+
+footer p {
+  margin: 0; /* Enlève les marges par défaut */
+  font-size: 1rem; /* Taille de la police */
+  letter-spacing: 1px; /* Espacement entre les lettres */
+}

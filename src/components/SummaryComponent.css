@@ -1,0 +1,174 @@
+.summary-component {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #0c002b; /* Fond bleu foncé */
+    color: white; /* Couleur du texte en blanc */
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    margin: 5rem auto;
+    margin-top: 5rem;
+  }
+  
+  .summary-component h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .summary-component p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
+  
+  .summary-component label {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  .summary-component input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    background-color: #34495e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .validate-button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    color: #f1f2f3;
+    background-color: #27ae60;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .validate-button:hover {
+    background-color: #219150;
+  }
+  
+  .progress-bar {
+    width: 100%;
+    background-color: #34495e;
+    border-radius: 5px;
+    margin-top: 1rem;
+    overflow: hidden;
+    height: 25px;
+    position: relative;
+  }
+  
+  .progress {
+    height: 100%;
+    background-color: #27ae60;
+    transition: width 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .additional-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .additional-buttons .contact-button,
+  .additional-buttons .payment-button {
+    flex: 1;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    color: #f1f2f3;
+    background-color: #34495e;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem; /* Space between buttons */
+  }
+  
+  .additional-buttons .contact-button {
+    margin-right: 1rem;
+  }
+  
+  .additional-buttons .contact-button:hover,
+  .additional-buttons .payment-button:hover {
+    background-color: #2c3e50;
+  }
+  
+  .error-message {
+    color: #e74c3c;
+    margin-top: 1rem;
+    font-weight: bold;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .summary-component {
+      padding: 1.5rem;
+    }
+  
+    .summary-component h2 {
+      font-size: 2rem;
+    }
+  
+    .summary-component p,
+    .summary-component label {
+      font-size: 1rem;
+    }
+  
+    .summary-component input,
+    .validate-button,
+    .additional-buttons .contact-button,
+    .additional-buttons .payment-button {
+      font-size: 1rem;
+      padding: 0.5rem;
+    }
+  
+    .progress-bar {
+      height: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .summary-component {
+      padding: 1rem;
+    }
+  
+    .summary-component h2 {
+      font-size: 1.5rem;
+    }
+  
+    .summary-component p,
+    .summary-component label {
+      font-size: 0.9rem;
+    }
+  
+    .summary-component input,
+    .validate-button,
+    .additional-buttons .contact-button,
+    .additional-buttons .payment-button {
+      font-size: 0.9rem;
+      padding: 0.4rem;
+    }
+  
+    .progress-bar {
+      height: 15px;
+    }
+  }
