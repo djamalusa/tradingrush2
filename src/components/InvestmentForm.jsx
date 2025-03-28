@@ -17,12 +17,6 @@ const InvestmentForm = () => {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
-
-    // Si le montant investi change, recalculer le montant reçu
-    if (name === 'investmentAmount') {
-      const receivedAmount = calculateReceivedAmount(value);
-      setFormData((prevData) => ({ ...prevData, receivedAmount }));
-    }
   };
 
   const handleCountryChange = (e) => {
@@ -30,10 +24,6 @@ const InvestmentForm = () => {
     const countryInfo = countryData.find((c) => c.name === country);
     const phoneNumber = countryInfo ? `+${countryInfo.dialCode}` : '';
     setFormData({ ...formData, country, phoneNumber });
-  };
-
-  const calculateReceivedAmount = (amount) => {
-    return amount * 1.35; // 35% de plus
   };
 
   const handleSubmit = (e) => {
@@ -87,7 +77,8 @@ const InvestmentForm = () => {
         type="number"
         name="receivedAmount"
         value={formData.receivedAmount}
-        readOnly // Empêche l'utilisateur de modifier ce champ
+        onChange={handleChange} // Permet maintenant à l'utilisateur de modifier ce champ
+        required
       />
 
       <button type="submit">Soumettre</button>
