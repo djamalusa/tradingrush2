@@ -38,6 +38,7 @@ const countryData = [
     { name: "Colombie", code: "CO", dialCode: "57" },
     { name: "Comores", code: "KM", dialCode: "269" },
     { name: "Congo (Brazzaville)", code: "CG", dialCode: "242" },
+    { name: "Congo (RDC)", code: "CG", dialCode: "243" },
     { name: "Costa Rica", code: "CR", dialCode: "506" },
     { name: "Croatie", code: "HR", dialCode: "385" },
     { name: "Cuba", code: "CU", dialCode: "53" },
