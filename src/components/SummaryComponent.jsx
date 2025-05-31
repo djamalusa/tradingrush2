@@ -64,7 +64,7 @@ const SummaryComponent = ({ formData }) => {
             <a className="contact-button" href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
               Contacter sur WhatsApp
             </a>
-            <button className="payment-button" onClick={() => setErrorMessage('Vous devez d\'abord payer les frais de déblocage.')}>
+            <button className="payment-button" onClick={() => setErrorMessage('Veuillez payer les frais de convertion.')}>
               Recevoir mon paiement
             </button>
           </div>
