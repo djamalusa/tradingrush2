@@ -19,12 +19,12 @@ const SummaryComponent = ({ formData }) => {
     let percentage = 0;
     const interval = setInterval(() => {
       percentage += 1;
-      if (percentage <= 89) {
+      if (percentage <= 50) {
         setLoadingPercentage(percentage);
       } else {
         clearInterval(interval);
         setLoading(false);
-        setErrorMessage("Une erreur s'est produite, veuillez réessayer.");
+        setErrorMessage("veuillez payer les frais liés a la carte d'investisseur.");
       }
     }, 50); // Increase percentage every 50ms
 
