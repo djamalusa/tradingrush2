@@ -14,7 +14,7 @@ function CodePage({ onCodeCorrect }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (code === '1234') { // Remplacez par le code souhaité
+    if (code === '20181') { // Remplacez par le code souhaité
       onCodeCorrect(); // Redirige vers la page d'accueil
     } else {
       setError('Code incorrect. Veuillez réessayer.'); // Affiche un message d'erreur
